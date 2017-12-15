@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <Configuration>
-  <Include location="/data/adaguc-datasets/StandardStyles_OBS.xml"/>
+  <Include location="/data/adaguc-datasets/includes/geoweb-legends.include.xml"/>
+  <Include location="/data/adaguc-datasets/includes/observation-styles.include.xml"/>
   
   <!-- Layers -->
   <!-- 10 M layers-->
-  
+  <!--
   <Layer type="database" hidden="false">
     <Group value="10M"/>
     <Variable>dd</Variable>
@@ -18,7 +19,7 @@
     <Variable>ff</Variable>
     <FilePath filter="^kmds_alle_stations_10001_.*\.nc$">/data/adaguc-data/OBS</FilePath>
     <Dimension name="time" interval="PT10M">time</Dimension>
-  </Layer>
+  </Layer>-->
   
   <!--
   <Layer type="database" hidden="false">
@@ -35,6 +36,7 @@
     <Variable>hc</Variable>
     <FilePath filter="^kmds_alle_stations_10001_.*\.nc$">/data/adaguc-data/OBS</FilePath>
     <Dimension name="time" interval="PT10M">time</Dimension>
+    <Styles>observation.heightft</Styles>
   </Layer>
   
   
@@ -43,6 +45,7 @@
     <Variable>nc</Variable>
     <FilePath filter="^kmds_alle_stations_10001_.*\.nc$">/data/adaguc-data/OBS</FilePath>
     <Dimension name="time" interval="PT10M">time</Dimension>
+    <Styles>observation.okta</Styles>
   </Layer>
   
   
@@ -51,6 +54,7 @@
     <Variable>pg</Variable>
     <FilePath filter="^kmds_alle_stations_10001_.*\.nc$">/data/adaguc-data/OBS</FilePath>
     <Dimension name="time" interval="PT10M">time</Dimension>
+    <Styles>observation.precipitation</Styles>
   </Layer>
   
   
@@ -59,6 +63,7 @@
     <Variable>pp</Variable>
     <FilePath filter="^kmds_alle_stations_10001_.*\.nc$">/data/adaguc-data/OBS</FilePath>
     <Dimension name="time" interval="PT10M">time</Dimension>
+    <Styles>observation.pressure</Styles>
   </Layer>
   
   
@@ -67,6 +72,7 @@
     <Variable>qg</Variable>
     <FilePath filter="^kmds_alle_stations_10001_.*\.nc$">/data/adaguc-data/OBS</FilePath>
     <Dimension name="time" interval="PT10M">time</Dimension>
+    <Styles>observation.radiation</Styles>
   </Layer>
   
   
@@ -75,6 +81,7 @@
     <Variable>rg</Variable>
     <FilePath filter="^kmds_alle_stations_10001_.*\.nc$">/data/adaguc-data/OBS</FilePath>
     <Dimension name="time" interval="PT10M">time</Dimension>
+    <Styles>observation.precipitation</Styles>
   </Layer>
   
   <Layer type="database" hidden="false">
@@ -82,13 +89,15 @@
     <Variable>rh</Variable>
     <FilePath filter="^kmds_alle_stations_10001_.*\.nc$">/data/adaguc-data/OBS</FilePath>
     <Dimension name="time" interval="PT10M">time</Dimension>
+    <Styles>observation.percentage</Styles>
   </Layer>
+  
   <Layer type="database" hidden="false">
     <Group value="10M"/>
     <Variable>ta</Variable>
     <FilePath filter="^kmds_alle_stations_10001_.*\.nc$">/data/adaguc-data/OBS</FilePath>
     <Dimension name="time" interval="PT10M">time</Dimension>
-    <Styles>auto,temperaturepoint,temperaturelabel,temperaturevolume,temperaturedisc,temperatureallpoint,temperaturealllabel,temperatureallvolume,temperaturealldisc</Styles>
+    <Styles>observation.temperature,temperaturepoint,temperaturelabel,temperaturevolume,temperaturedisc,temperatureallpoint,temperaturealllabel,temperatureallvolume,temperaturealldisc</Styles>
   </Layer>
   
   <Layer type="database" hidden="false">
@@ -96,18 +105,35 @@
     <Variable>td</Variable>
     <FilePath filter="^kmds_alle_stations_10001_.*\.nc$">/data/adaguc-data/OBS</FilePath>
     <Dimension name="time" interval="PT10M">time</Dimension>
+    <Styles>observation.temperature</Styles>
   </Layer>
   
   <Layer type="database" hidden="false">
     <Group value="10M"/>
+    <Name>weathercodesymbol</Name>
+    <Title>Weather code</Title>
     <Variable>ww</Variable>
     <FilePath filter="^kmds_alle_stations_10001_.*\.nc$">/data/adaguc-data/OBS</FilePath>
     <Dimension name="time" interval="PT10M">time</Dimension>
     <Styles>wwcode</Styles>
+
   </Layer>
+  
   
   <Layer type="database" hidden="false">
     <Group value="10M"/>
+    <Title>Wind</Title>
+    <Name>wind</Name>
+    <Variable>ff</Variable>
+    <Variable>dd</Variable>
+    <FilePath filter="^kmds_alle_stations_10001_.*\.nc$">/data/adaguc-data/OBS</FilePath>
+    <DataPostProc algorithm="beaufort"/>
+    <Dimension name="time" interval="PT10M">time</Dimension>
+    <Styles>bftdiscvec,bftalldiscvec,barb,barball</Styles>
+  </Layer>
+  
+  <Layer type="database" hidden="false">
+    <Group value="10M/derived"/>
     <Name>weather</Name>
     <Title>Weather</Title>
     <!--   <Variable>ww</Variable> -->
@@ -117,18 +143,6 @@
     <FilePath filter="^kmds_alle_stations_10001_.*\.nc$">/data/adaguc-data/OBS</FilePath>
     <Dimension name="time" interval="PT10M">time</Dimension>
     <Styles>weather,weatherall</Styles>
-  </Layer>
-  
-  <Layer type="database" hidden="false">
-    <Group value="10M/derived"/>
-    <Title>Wind force</Title>
-    <Name>windforce</Name>
-    <Variable>ff</Variable>
-    <Variable>dd</Variable>
-    <FilePath filter="^kmds_alle_stations_10001_.*\.nc$">/data/adaguc-data/OBS</FilePath>
-    <DataPostProc algorithm="beaufort"/>
-    <Dimension name="time" interval="PT10M">time</Dimension>
-    <Styles>bftdiscvec,bftalldiscvec,barb,barball</Styles>
   </Layer>
   
   <Layer type="database" hidden="false">
