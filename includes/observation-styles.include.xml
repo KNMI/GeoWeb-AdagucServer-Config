@@ -111,6 +111,8 @@
   
   <Style name="bftdisc">
     <Legend fixed="true">bluewhitered</Legend>
+    <Min>0</Min>
+    <Max>30</Max>
     <Thinning radius="40"/>
     <RenderMethod>barb,barbthin</RenderMethod>
     <Point pointstyle="disc" fillcolor="#00000060" textcolor="#FFFFFFFF" linecolor="#00000060" discradius="20" dot="true" anglestart="0" anglestep="120" fontfile="{ADAGUC_PATH}/data/fonts/FreeSans.ttf" fontsize="10" textformat="%1.0f"/>
