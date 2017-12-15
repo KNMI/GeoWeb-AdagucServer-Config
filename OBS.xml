@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Configuration>
+  <Include location="/data/adaguc-datasets/StandardStyles_OBS.xml"/>
+  
+  <!-- Layers -->
+  <!-- 10 M layers-->
+  
+  <Layer type="database" hidden="false">
+    <Group value="10M"/>
+    <Variable>dd</Variable>
+    <FilePath filter="^kmds_alle_stations_10001_.*\.nc$">/data/adaguc-data/OBS</FilePath>
+    <Dimension name="time" interval="PT10M">time</Dimension>
+  </Layer>
+  
+  
+  <Layer type="database" hidden="false">
+    <Group value="10M"/>
+    <Variable>ff</Variable>
+    <FilePath filter="^kmds_alle_stations_10001_.*\.nc$">/data/adaguc-data/OBS</FilePath>
+    <Dimension name="time" interval="PT10M">time</Dimension>
+  </Layer>
+  
+  <!--
+  <Layer type="database" hidden="false">
+  <Group value="10M"/>
+  <Variable>fx</Variable>
+  <FilePath filter="^kmds_alle_stations_10001_.*\.nc$">/data/adaguc-data/OBS</FilePath>
+  <Dimension name="time" interval="PT10M">time</Dimension>
+  </Layer>
+  -->
+  
+  
+  <Layer type="database" hidden="false">
+    <Group value="10M"/>
+    <Variable>hc</Variable>
+    <FilePath filter="^kmds_alle_stations_10001_.*\.nc$">/data/adaguc-data/OBS</FilePath>
+    <Dimension name="time" interval="PT10M">time</Dimension>
+  </Layer>
+  
+  
+  <Layer type="database" hidden="false">
+    <Group value="10M"/>
+    <Variable>nc</Variable>
+    <FilePath filter="^kmds_alle_stations_10001_.*\.nc$">/data/adaguc-data/OBS</FilePath>
+    <Dimension name="time" interval="PT10M">time</Dimension>
+  </Layer>
+  
+  
+  <Layer type="database" hidden="false">
+    <Group value="10M"/>
+    <Variable>pg</Variable>
+    <FilePath filter="^kmds_alle_stations_10001_.*\.nc$">/data/adaguc-data/OBS</FilePath>
+    <Dimension name="time" interval="PT10M">time</Dimension>
+  </Layer>
+  
+  
+  <Layer type="database" hidden="false">
+    <Group value="10M"/>
+    <Variable>pp</Variable>
+    <FilePath filter="^kmds_alle_stations_10001_.*\.nc$">/data/adaguc-data/OBS</FilePath>
+    <Dimension name="time" interval="PT10M">time</Dimension>
+  </Layer>
+  
+  
+  <Layer type="database" hidden="false">
+    <Group value="10M"/>
+    <Variable>qg</Variable>
+    <FilePath filter="^kmds_alle_stations_10001_.*\.nc$">/data/adaguc-data/OBS</FilePath>
+    <Dimension name="time" interval="PT10M">time</Dimension>
+  </Layer>
+  
+  
+  <Layer type="database" hidden="false">
+    <Group value="10M"/>
+    <Variable>rg</Variable>
+    <FilePath filter="^kmds_alle_stations_10001_.*\.nc$">/data/adaguc-data/OBS</FilePath>
+    <Dimension name="time" interval="PT10M">time</Dimension>
+  </Layer>
+  
+  <Layer type="database" hidden="false">
+    <Group value="10M"/>
+    <Variable>rh</Variable>
+    <FilePath filter="^kmds_alle_stations_10001_.*\.nc$">/data/adaguc-data/OBS</FilePath>
+    <Dimension name="time" interval="PT10M">time</Dimension>
+  </Layer>
+  <Layer type="database" hidden="false">
+    <Group value="10M"/>
+    <Variable>ta</Variable>
+    <FilePath filter="^kmds_alle_stations_10001_.*\.nc$">/data/adaguc-data/OBS</FilePath>
+    <Dimension name="time" interval="PT10M">time</Dimension>
+    <Styles>auto,temperaturepoint,temperaturelabel,temperaturevolume,temperaturedisc,temperatureallpoint,temperaturealllabel,temperatureallvolume,temperaturealldisc</Styles>
+  </Layer>
+  
+  <Layer type="database" hidden="false">
+    <Group value="10M"/>
+    <Variable>td</Variable>
+    <FilePath filter="^kmds_alle_stations_10001_.*\.nc$">/data/adaguc-data/OBS</FilePath>
+    <Dimension name="time" interval="PT10M">time</Dimension>
+  </Layer>
+  
+  <Layer type="database" hidden="false">
+    <Group value="10M"/>
+    <Variable>ww</Variable>
+    <FilePath filter="^kmds_alle_stations_10001_.*\.nc$">/data/adaguc-data/OBS</FilePath>
+    <Dimension name="time" interval="PT10M">time</Dimension>
+    <Styles>wwcode</Styles>
+  </Layer>
+  
+  <Layer type="database" hidden="false">
+    <Group value="10M"/>
+    <Name>weather</Name>
+    <Title>Weather</Title>
+    <!--   <Variable>ww</Variable> -->
+    <Variable>rh</Variable>
+    <Variable>ta</Variable>
+    <Variable>zm</Variable>
+    <FilePath filter="^kmds_alle_stations_10001_.*\.nc$">/data/adaguc-data/OBS</FilePath>
+    <Dimension name="time" interval="PT10M">time</Dimension>
+    <Styles>weather,weatherall</Styles>
+  </Layer>
+  
+  <Layer type="database" hidden="false">
+    <Group value="10M/derived"/>
+    <Title>Wind force</Title>
+    <Name>windforce</Name>
+    <Variable>ff</Variable>
+    <Variable>dd</Variable>
+    <FilePath filter="^kmds_alle_stations_10001_.*\.nc$">/data/adaguc-data/OBS</FilePath>
+    <DataPostProc algorithm="beaufort"/>
+    <Dimension name="time" interval="PT10M">time</Dimension>
+    <Styles>bftdiscvec,bftalldiscvec,barb,barball</Styles>
+  </Layer>
+  
+  <Layer type="database" hidden="false">
+    <Group value="10M/derived"/>
+    <Title>T2m_Td2m</Title>
+    <Name>T2m_Td2m</Name>
+    <Variable>ta</Variable>
+    <Variable>pp</Variable>
+    <Variable>ff</Variable>
+    <FilePath filter="^kmds_alle_stations_10001_.*\.nc$">/data/adaguc-data/OBS</FilePath>
+    <Dimension name="time" interval="PT10M">time</Dimension>
+    <Styles>threevar</Styles>
+  </Layer>
+  
+  
+  <!-- End of configuration /-->
+</Configuration>

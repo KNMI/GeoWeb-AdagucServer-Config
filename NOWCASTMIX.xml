@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Configuration>
+  
+  <Style name="alert">
+    <Legend fixed="true" tickinterval="5">isoluminant</Legend>
+    <Min>0</Min>
+    <Max>100</Max>
+    <VaueRange min="31" max="87"/>
+    <ShadeInterval min="31" max="32" label="31" fillcolor="#FFFE33"/>
+    <ShadeInterval min="33" max="34" label="33" fillcolor="#FFF2C4"/>
+    <ShadeInterval min="34" max="35" label="34" fillcolor="#F9CF95"/>
+    <ShadeInterval min="36" max="37" label="36" fillcolor="#FFA642"/>
+    <ShadeInterval min="38" max="39" label="38" fillcolor="#F87000"/>
+    <ShadeInterval min="40" max="41" label="40" fillcolor="#FFB1B7"/>
+    <ShadeInterval min="42" max="43" label="42" fillcolor="#FF727C"/>
+    <ShadeInterval min="46" max="47" label="46" fillcolor="#F40C00"/>
+    <ShadeInterval min="95" max="96" label="95" fillcolor="#FF81FF"/>
+    <ShadeInterval min="48" max="49" label="48" fillcolor="#EC19F2"/>
+    <ShadeInterval min="61" max="62" label="61" fillcolor="#B8FFB7"/>
+    <ShadeInterval min="62" max="63" label="62" fillcolor="#70DC6C"/>
+    <ShadeInterval min="66" max="67" label="66" fillcolor="#22C222"/>
+    <ShadeInterval min="70" max="71" label="70" fillcolor="#B2EEF8"/>
+    <ShadeInterval min="71" max="72" label="71" fillcolor="#85AFFF"/>
+    <ShadeInterval min="72" max="73" label="72" fillcolor="#334EFF"/>
+    <ShadeInterval min="87" max="88" label="87" fillcolor="#3AF2C0"/>
+    
+    <RenderMethod>shaded,shadedcontour</RenderMethod>
+  </Style>
+  
+  <Layer type="database">
+    
+    <FilePath filter="^.*\.nc$">/data/adaguc-data/NOWCASTMIX</FilePath>
+    <Variable>alert_code</Variable>
+    <Styles>alert</Styles>
+  </Layer>
+</Configuration>

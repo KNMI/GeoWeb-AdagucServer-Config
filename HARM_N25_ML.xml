@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Configuration>
+  <Include location="/data/adaguc-datasets/StandardStyles_HARM_N25.xml"/>
+  
+  <Layer type="database">
+    <Name>air_pressure_at_sea_level</Name>
+    <Title>Pressure MSL</Title>
+    <Variable>air_pressure_at_sea_level</Variable>
+    <FilePath filter="HARM_N25.*_ML\.nc">/data/adaguc-data/HARM_N25_ML</FilePath>
+    <DataPostProc algorithm="ax+b" a="0.01" b="0" units="hPa"/>
+    <Dimension name="time" units="ISO8601" default="min">time</Dimension>
+    <Dimension name="forecast_reference_time" units="ISO8601">reference_time</Dimension>
+  </Layer>
+  
+  <Layer type="database">
+    <Name>air_pressure__at_ml</Name>
+    <Title>Pressure (ML)</Title>
+    <Variable>air_pressure__at_ml</Variable>
+    <FilePath filter="HARM_N25.*_ML\.nc">/data/adaguc-data/HARM_N25_ML</FilePath>
+    <Dimension name="time" units="ISO8601" default="min">time</Dimension>
+    <Dimension name="modellevel" units="-">modellevel</Dimension>
+    <Dimension name="forecast_reference_time" units="ISO8601">reference_time</Dimension>
+  </Layer>
+  
+  <Layer type="database">
+    <Name>dewpoint_temperature__at_ml</Name>
+    <Title>Dewpoint (ML)</Title>
+    <Variable>dewpoint_temperature__at_ml</Variable>
+    <FilePath filter="HARM_N25.*_ML\.nc">/data/adaguc-data/HARM_N25_ML</FilePath>
+    <!--    <DataPostProc algorithm="ax+b" a="1" b="-273.15" units="Celsius"/> -->
+    <Dimension name="time" units="ISO8601" default="min">time</Dimension>
+    <Dimension name="modellevel" units="-">modellevel</Dimension>
+    <Dimension name="forecast_reference_time" units="ISO8601">reference_time</Dimension>
+  </Layer>
+  
+  <Layer type="database">
+    <Name>air_temperature__at_ml</Name>
+    <Title>Temperature (ML)</Title>
+    <Variable>air_temperature__at_ml</Variable>
+    <FilePath filter="HARM_N25.*_ML\.nc">/data/adaguc-data/HARM_N25_ML</FilePath>
+    <!--    <DataPostProc algorithm="ax+b" a="1" b="-273.15" units="Celsius"/> -->
+    <Dimension name="time" units="ISO8601" default="min">time</Dimension>
+    <Dimension name="modellevel" units="-">modellevel</Dimension>
+    <Dimension name="forecast_reference_time" units="ISO8601">reference_time</Dimension>
+  </Layer>
+  
+  <Layer type="database">
+    <Name>specific_humidity__at_ml</Name>
+    <Title>Specific Humidity (ML)</Title>
+    <Variable>specific_humidity__at_ml</Variable>
+    <FilePath filter="HARM_N25.*_ML\.nc">/data/adaguc-data/HARM_N25_ML</FilePath>
+    <Dimension name="time" units="ISO8601" default="min">time</Dimension>
+    <Dimension name="modellevel" units="-">modellevel</Dimension>
+    <Dimension name="forecast_reference_time" units="ISO8601">reference_time</Dimension>
+  </Layer>
+  
+  <Layer type="database">
+    <Name>wind__at_ml</Name>
+    <Title>Wind flags (ML)</Title>
+    <Variable>x_wind__at_ml</Variable>
+    <Variable>y_wind__at_ml</Variable>
+    <FilePath filter="HARM_N25.*_ML\.nc">/data/adaguc-data/HARM_N25_ML</FilePath>
+    <!--    <DataPostProc algorithm="ax+b" a="1" b="0" units="m/s"/>-->
+    <Dimension name="time" units="ISO8601" default="min">time</Dimension>
+    <Dimension name="modellevel" units="-">modellevel</Dimension>
+    <Dimension name="forecast_reference_time" units="ISO8601">reference_time</Dimension>
+  </Layer>
+  
+  <Layer type="database">
+    <Name>x_wind__at_ml</Name>
+    <Title>X Wind (ML)</Title>
+    <Variable>x_wind__at_ml</Variable>
+    <FilePath filter="HARM_N25.*_ML\.nc">/data/adaguc-data/HARM_N25_ML</FilePath>
+    <!--    <DataPostProc algorithm="ax+b" a="1" b="0" units="m/s"/>-->
+    <Dimension name="time" units="ISO8601" default="min">time</Dimension>
+    <Dimension name="modellevel" units="-">modellevel</Dimension>
+    <Dimension name="forecast_reference_time" units="ISO8601">reference_time</Dimension>
+  </Layer>
+  
+  <Layer type="database">
+    <Name>y_wind__at_ml</Name>
+    <Title>Y Wind (ML)</Title>
+    <Variable>y_wind__at_ml</Variable>
+    <FilePath filter="HARM_N25.*_ML\.nc">/data/adaguc-data/HARM_N25_ML</FilePath>
+    <!--    <DataPostProc algorithm="ax+b" a="1" b="0" units="m/s"/>-->
+    <Dimension name="time" units="ISO8601" default="min">time</Dimension>
+    <Dimension name="modellevel" units="-">modellevel</Dimension>
+    <Dimension name="forecast_reference_time" units="ISO8601">reference_time</Dimension>
+  </Layer>
+  
+</Configuration>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Configuration>
+  <Include location="/data/adaguc-datasets/StandardStyles_OVL.xml"/>
+  
+  <!-- Layers -->
+  
+  <Layer type="database" hidden="false">
+    <Title>FIR areas</Title>
+    <Name>FIR_DEC_2013_EU</Name>
+    <Variable>features</Variable>
+    <DataSource>GEOJSON</DataSource>
+    <FilePath filter="FIR_DEC_2013_EU.geojson$">/data/adaguc-data/OVERLAYS</FilePath>
+    <Styles>blue,yellow,red,black</Styles>
+  </Layer>
+  <Layer type="database" hidden="false">
+    <Title>Dutch districts</Title>
+    <Name>neddis</Name>
+    <Variable>features</Variable>
+    <DataSource>GEOJSON</DataSource>
+    <FilePath filter="neddis.geojson$">/data/adaguc-data/OVERLAYS</FilePath>
+    <Styles>blue,yellow,red,black</Styles>
+  </Layer>
+  <Layer type="database" hidden="false">
+    <Title>North Sea districts</Title>
+    <Name>northseadistricts</Name>
+    <Variable>features</Variable>
+    <DataSource>GEOJSON</DataSource>
+    <FilePath filter="northseadistricts.geojson$">/data/adaguc-data/OVERLAYS</FilePath>
+    <Styles>blue,yellow,red,black</Styles>
+  </Layer>
+  <Layer type="database" hidden="false">
+    <Title>Gemeenten</Title>
+    <Name>gemeenten</Name>
+    <Variable>features</Variable>
+    <DataSource>GEOJSON</DataSource>
+    <FilePath filter="gemeenten.geojson$">/data/adaguc-data/OVERLAYS</FilePath>
+    <Styles>blue,yellow,red,black</Styles>
+  </Layer>
+  <Layer type="database" hidden="false">
+    <Title>Waterschappen</Title>
+    <Name>waterschappen</Name>
+    <Variable>features</Variable>
+    <DataSource>GEOJSON</DataSource>
+    <FilePath filter="waterschappen.geojson$">/data/adaguc-data/OVERLAYS</FilePath>
+    <Styles>blue,yellow,red,black</Styles>
+  </Layer>
+  <Layer type="database" hidden="false">
+    <Title>Provincies</Title>
+    <Name>provincies</Name>
+    <Variable>features</Variable>
+    <DataSource>GEOJSON</DataSource>
+    <FilePath filter="provincies.geojson$">/data/adaguc-data/OVERLAYS</FilePath>
+    <Styles>blue,yellow,red,black</Styles>
+  </Layer>
+  <Layer type="database" hidden="false">
+    <Title>Countries</Title>
+    <Name>countries</Name>
+    <Variable>features</Variable>
+    <DataSource>GEOJSON</DataSource>
+    <FilePath filter="countries.geojson$">/data/adaguc-data/OVERLAYS</FilePath>
+    <Styles>black</Styles>
+  </Layer>
+  <Layer type="database" hidden="false">
+    <Title>Rijkswegen</Title>
+    <Name>nwblightR</Name>
+    <Variable>features</Variable>
+    <DataSource>GEOJSON</DataSource>
+    <FilePath filter="nwb-light-R.geojson$">/data/adaguc-data/OVERLAYS</FilePath>
+    <Styles>blue,yellow,red,black</Styles>
+  </Layer>
+  
+  <Layer type="database" hidden="false">
+    <Title>Prov.wegen</Title>
+    <Name>nwblightP</Name>
+    <Variable>features</Variable>
+    <DataSource>GEOJSON</DataSource>
+    <FilePath filter="nwb-light-P.geojson$">/data/adaguc-data/OVERLAYS</FilePath>
+    <Styles>blue,yellow,red,black</Styles>
+  </Layer>
+  
+  
+  <!-- End of configuration /-->
+</Configuration>

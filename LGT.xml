@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Configuration>
+  
+  <Style name="LGTKNMI">
+    <Legend>bluewhitered</Legend>
+    <ValueRange min="1" max="4"/>
+    
+    <SymbolInterval min="1" max="2" file="/data/adaguc-datasets/resources/icons/lgt_cross.png"/>
+    <SymbolInterval min="2" max="3" file="/data/adaguc-datasets/resources/icons/lgt_cross.png"/>
+    <SymbolInterval min="3" max="4" file="/data/adaguc-datasets/resources/icons/lgt_cross.png"/>
+    <SymbolInterval min="4" max="5" file="/data/adaguc-datasets/resources/icons/lgt_cross.png"/>
+    <RenderMethod>point</RenderMethod>
+    <Point pointstyle="symbol" fillcolor="#000000FF" textcolor="#FFFFFFFF" linecolor="#000000A0" discradius="16" dot="false" anglestart="0" anglestep="120" fontfile="/data/adaguc-datasets/resources/fonts/ROsanswebtextregular.ttf" fontsize="12" textformat="%0.1f"/>
+  </Style>
+  
+  <Style name="LGTKNMI_16">
+    <Legend>bluewhitered</Legend>
+    <ValueRange min="1" max="4"/>
+    
+    <SymbolInterval min="1" max="2" file="/data/adaguc-datasets/resources/icons/lightning16_cc.png"/>
+    <SymbolInterval min="2" max="3" file="/data/adaguc-datasets/resources/icons/lightning16_cg.png"/>
+    <SymbolInterval min="3" max="4" file="/data/adaguc-datasets/resources/icons/lightning16_cc.png"/>
+    <SymbolInterval min="4" max="5" file="/data/adaguc-datasets/resources/icons/lightning16_cg.png"/>
+    <RenderMethod>point</RenderMethod>
+    <Point pointstyle="symbol" fillcolor="#000000FF" textcolor="#FFFFFFFF" linecolor="#000000A0" discradius="16" dot="false" anglestart="0" anglestep="120" fontfile="/data/adaguc-datasets/resources/fonts/ROsanswebtextregular.ttf" fontsize="12" textformat="%0.1f"/>
+  </Style>
+  
+  
+  <Layer type="database">
+    <Name>LGT_NL25_LAM_05M</Name>
+    <Title>Lightning NL</Title>
+    <DataBaseTable>LGT_NL25_LAM_05M</DataBaseTable>
+    <FilePath filter="LGT_NL25_LAM_05M.*\.nc$">/data/adaguc-data/LGT</FilePath>
+    <Dimension name="time" interval="PT5M">time</Dimension>
+    <Variable>event_type</Variable>
+    <Styles>LGTKNMI,LGTKNMI_16</Styles>
+  </Layer>
+  
+  <Layer type="database">
+    <Name>LGT_NL23_LAM_05M</Name>
+    <Title>Lightning EUR</Title>
+    <DataBaseTable>LGT_NL23_LAM_05M</DataBaseTable>
+    <FilePath filter="LGT_NL23_LAM_05M.*\.nc$">/data/adaguc-data/LGT</FilePath>
+    <Dimension name="time" interval="PT5M">time</Dimension>
+    <Variable>event_type</Variable>
+    <Styles>LGTKNMI,LGTKNMI_16</Styles>
+  </Layer>
+  
+</Configuration>

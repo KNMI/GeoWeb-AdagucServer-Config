@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Configuration>
+  <Include location="/data/adaguc-datasets/StandardStyles_RADAR.xml"/>
+  <!-- Layers -->
+  <Layer type="database" hidden="false">
+    <Name>precipitation</Name>
+    <Title>Neerslag</Title>
+    <Variable>image1.image_data</Variable>
+    <FilePath filter="^RAD_NL25_PCP_C.?_.*\.h5$">/data/adaguc-data/RADAR</FilePath>
+    <Dimension name="time" units="ISO8601" interval="PT5M" default="max">time</Dimension>
+    <Styles>radar</Styles>
+    <DataPostProc algorithm="dbztorr" units="mm/hr"/>
+  </Layer>
+  
+  <Layer type="database" hidden="false">
+    <Name>precipitation_eur</Name>
+    <Title>Neerslag EUR</Title>
+    <Variable>image1.image_data</Variable>
+    <FilePath filter="^RAD_NL23_PCP_NA_.*\.h5$">/data/adaguc-data/RADAR</FilePath>
+    <Dimension name="time" units="ISO8601" interval="PT15M" default="max">time</Dimension>
+    <Styles>radar</Styles>
+    <DataPostProc algorithm="dbztorr" units="mm/hr"/>
+  </Layer>
+  
+  <Layer type="database" hidden="false">
+    <Name>echotops</Name>
+    <Title>Echotoppen</Title>
+    <Variable>image1.image_data</Variable>
+    <FilePath filter="^RAD_NL25_ETH_NA_.*\.h5$">/data/adaguc-data/RADAR</FilePath>
+    <Dimension name="time" units="ISO8601" interval="PT5M" default="max">time</Dimension>
+    <Styles>radar</Styles>
+    <DataPostProc algorithm="dbztorr" units="mm/hr"/>
+  </Layer>
+  
+  <Layer type="database" hidden="false">
+    <Name>hailwarning</Name>
+    <Title>Zomerhagel</Title>
+    <Variable>image1.image_data</Variable>
+    <FilePath filter="^RAD_NL25_HAW_NA_.*\.h5$">/data/adaguc-data/RADAR</FilePath>
+    <Dimension name="time" units="ISO8601" interval="PT5M" default="max">time</Dimension>
+    <Styles>hailwarning</Styles>
+  </Layer>
+  
+  <Layer type="database" hidden="false">
+    <Name>preflits_vii</Name>
+    <Title>Preflits VII</Title>
+    <Variable>image1.image_data</Variable>
+    <FilePath filter="^LGT_NL25_LGP_NA_.*\.h5$">/data/adaguc-data/RADAR</FilePath>
+    <Dimension name="time" units="ISO8601" interval="PT5M" default="max">time</Dimension>
+    <Styles>preflits_vii</Styles>
+  </Layer>
+  
+  <Layer type="database" hidden="false">
+    <Name>preflits_cri</Name>
+    <Title>Preflits CRI</Title>
+    <Variable>image2.image_data</Variable>
+    <FilePath filter="^LGT_NL25_LGP_NA_.*\.h5$">/data/adaguc-data/RADAR</FilePath>
+    <Dimension name="time" units="ISO8601" interval="PT5M" default="max">time</Dimension>
+    <Styles>preflits_cri</Styles>
+  </Layer>
+  
+  <Layer type="database" hidden="false">
+    <Name>snow</Name>
+    <Title>Sneeuw</Title>
+    <Variable>image1.image_data</Variable>
+    <FilePath filter="^RAD_NL25_SNW_NA_.*\.h5$">/data/adaguc-data/RADAR</FilePath>
+    <Dimension name="time" units="ISO8601" interval="PT5M" default="max">time</Dimension>
+    <Styles>neso</Styles>
+  </Layer>
+  
+  
+  <Layer type="database" hidden="false">
+    <Name>precipitationfc</Name>
+    <Title>Neerslagverw</Title>
+    <Variable>forecast</Variable>
+    <FilePath filter="^RAD_NL25_PCP_F.?_.*\.h5$">/data/adaguc-data/RADAR</FilePath>
+    <!--    <DataBaseTable>RADAR_FC_ALL_ACTUAL</DataBaseTable> -->
+    <Dimension name="time" units="ISO8601" interval="PT5M" default="max">time</Dimension>
+    <Dimension name="forecast_reference_time" interval="PT5M" units="ISO8601">reference_time</Dimension>
+    <Styles>radar</Styles>
+    <DataPostProc algorithm="dbztorr" units="mm/hr"/>
+  </Layer>
+  
+  <Layer type="database" hidden="false">
+    <Name>nesofc</Name>
+    <Title>NESO</Title>
+    <Variable>forecast</Variable>
+    <FilePath filter="^RAD_NL25_NES_FC_.*\.h5$">/data/adaguc-data/RADAR</FilePath>
+    <!--    <DataBaseTable>RADAR_FC_ALL_ACTUAL</DataBaseTable> -->
+    <Dimension name="time" units="ISO8601" interval="PT5M" default="max">time</Dimension>
+    <Dimension name="forecast_reference_time" interval="PT5M" units="ISO8601">reference_time</Dimension>
+    <Styles>neso</Styles>
+  </Layer>
+  
+  
+  <!-- End of configuration /-->
+</Configuration>
