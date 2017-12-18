@@ -27,7 +27,6 @@
     <Title>Dewpoint (ML)</Title>
     <Variable>dewpoint_temperature__at_ml</Variable>
     <FilePath filter="HARM_N25.*_ML\.nc">/data/adaguc-data/HARM_N25_ML</FilePath>
-    <!--    <DataPostProc algorithm="ax+b" a="1" b="-273.15" units="Celsius"/> -->
     <Dimension name="time" units="ISO8601" default="min">time</Dimension>
     <Dimension name="modellevel" units="-">modellevel</Dimension>
     <Dimension name="forecast_reference_time" units="ISO8601">reference_time</Dimension>
@@ -38,7 +37,6 @@
     <Title>Temperature (ML)</Title>
     <Variable>air_temperature__at_ml</Variable>
     <FilePath filter="HARM_N25.*_ML\.nc">/data/adaguc-data/HARM_N25_ML</FilePath>
-    <!--    <DataPostProc algorithm="ax+b" a="1" b="-273.15" units="Celsius"/> -->
     <Dimension name="time" units="ISO8601" default="min">time</Dimension>
     <Dimension name="modellevel" units="-">modellevel</Dimension>
     <Dimension name="forecast_reference_time" units="ISO8601">reference_time</Dimension>
@@ -60,7 +58,6 @@
     <Variable>x_wind__at_ml</Variable>
     <Variable>y_wind__at_ml</Variable>
     <FilePath filter="HARM_N25.*_ML\.nc">/data/adaguc-data/HARM_N25_ML</FilePath>
-    <!--    <DataPostProc algorithm="ax+b" a="1" b="0" units="m/s"/>-->
     <Dimension name="time" units="ISO8601" default="min">time</Dimension>
     <Dimension name="modellevel" units="-">modellevel</Dimension>
     <Dimension name="forecast_reference_time" units="ISO8601">reference_time</Dimension>
@@ -71,7 +68,6 @@
     <Title>X Wind (ML)</Title>
     <Variable>x_wind__at_ml</Variable>
     <FilePath filter="HARM_N25.*_ML\.nc">/data/adaguc-data/HARM_N25_ML</FilePath>
-    <!--    <DataPostProc algorithm="ax+b" a="1" b="0" units="m/s"/>-->
     <Dimension name="time" units="ISO8601" default="min">time</Dimension>
     <Dimension name="modellevel" units="-">modellevel</Dimension>
     <Dimension name="forecast_reference_time" units="ISO8601">reference_time</Dimension>
@@ -82,7 +78,6 @@
     <Title>Y Wind (ML)</Title>
     <Variable>y_wind__at_ml</Variable>
     <FilePath filter="HARM_N25.*_ML\.nc">/data/adaguc-data/HARM_N25_ML</FilePath>
-    <!--    <DataPostProc algorithm="ax+b" a="1" b="0" units="m/s"/>-->
     <Dimension name="time" units="ISO8601" default="min">time</Dimension>
     <Dimension name="modellevel" units="-">modellevel</Dimension>
     <Dimension name="forecast_reference_time" units="ISO8601">reference_time</Dimension>
