@@ -30,6 +30,7 @@
   <Layer type="database">
     
     <FilePath filter="^.*\.nc$">/data/adaguc-data/NOWCASTMIX</FilePath>
+    <Dimension name="time" interval="PT5M" units="ISO8601" default="max">time</Dimension>
     <Variable>alert_code</Variable>
     <Styles>alert</Styles>
   </Layer>
