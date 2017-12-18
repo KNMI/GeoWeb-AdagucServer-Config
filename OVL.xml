@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <Configuration>
-  <Include location="/data/adaguc-datasets/StandardStyles_OVL.xml"/>
+  <Include location="/data/adaguc-datasets/includes/StandardStyles_OVL.xml"/>
   
   <!-- Layers -->
   
