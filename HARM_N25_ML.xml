@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <Configuration>
-  <Include location="/data/adaguc-datasets/StandardStyles_HARM_N25.xml"/>
+  <Include location="/data/adaguc-datasets/includes/StandardStyles_HARM_N25.xml"/>
   
   <Layer type="database">
     <Name>air_pressure_at_sea_level</Name>

@@ -294,10 +294,12 @@
            fontsize="8" discradius="8" textradius="15" dot="true" anglestart="89" anglestep="93" textformat="%0.1f"/>
     </Style>
     
-    <Style name="wwcode">
+    <Style name="wwcode_transparent">
       <Legend fixed="true">bluewhitered</Legend>
       <Thinning radius="32" />
       <RenderMethod>point,pointthin</RenderMethod>
+      <NameMapping name="point" title="Weather code transparent" abstract="pressure"/>
+      <NameMapping name="pointthin" title="Weather code transparent thinned" abstract="pressure"/>
       <Point pointstyle="symbol" fillcolor="#000000FF" textcolor="#FFFFFFFF" linecolor="#000000A0" discradius="16" 
              dot="false" anglestart="0" anglestep="120" fontsize="12" textformat="%0.1f"/>
       <SymbolInterval min="0" max="1" file="/data/adaguc-datasets/resources/symbols/WW-transparent/W00.png"/>
@@ -381,6 +383,98 @@
       <SymbolInterval min="96" max="97" file="/data/adaguc-datasets/resources/symbols/WW-transparent/W96onweer.png"/>
       <SymbolInterval min="99" max="100" file="/data/adaguc-datasets/resources/symbols/WW-transparent/W99tornado.png"/>
       <LegendGraphic value="/data/adaguc-datasets/resources/symbols/WW-transparent/legend.png"/>
+    </Style>
+    
+    <Style name="wwcode">
+      <Legend fixed="true">bluewhitered</Legend>
+      <Thinning radius="32" />
+      <RenderMethod>point,pointthin</RenderMethod>
+      <NameMapping name="point" title="Weather code" abstract="pressure"/>
+      <NameMapping name="pointthin" title="Weather code thinned" abstract="pressure"/>
+
+      <Point pointstyle="symbol" fillcolor="#000000FF" textcolor="#FFFFFFFF" linecolor="#000000A0" discradius="16" 
+             dot="false" anglestart="0" anglestep="120" fontsize="12" textformat="%0.1f"/>
+      <SymbolInterval min="0" max="1" file="/data/adaguc-datasets/resources/symbols/WW/W00.png"/>
+      <SymbolInterval min="1" max="2" file="/data/adaguc-datasets/resources/symbols/WW/W01.png"/>
+      <SymbolInterval min="2" max="3" file="/data/adaguc-datasets/resources/syambols/WW/W02.png"/>
+      <SymbolInterval min="3" max="4" file="/data/adaguc-datasets/resources/symbols/WW/W03.png"/>
+      <SymbolInterval min="4" max="5" file="/data/adaguc-datasets/resources/symbols/WW/W04heiig.png"/>
+      <SymbolInterval min="5" max="6" file="/data/adaguc-datasets/resources/symbols/WW/W05heiig.png"/>
+      <SymbolInterval min="10" max="11" file="/data/adaguc-datasets/resources/symbols/WW/W10nevel.png"/>
+      <SymbolInterval min="11" max="12" file="/data/adaguc-datasets/resources/symbols/WW/W11ijsnaaldjes.png"/>
+      <SymbolInterval min="12" max="13" file="/data/adaguc-datasets/resources/symbols/WW/W12weerlicht.png"/>
+      <SymbolInterval min="18" max="19" file="/data/adaguc-datasets/resources/symbols/WW/W18Squall.png"/>
+      <SymbolInterval min="20" max="21" file="/data/adaguc-datasets/resources/symbols/WW/W20mist.png"/>
+      <SymbolInterval min="21" max="22" file="/data/adaguc-datasets/resources/symbols/WW/W21neerslag.png"/>
+      <SymbolInterval min="22" max="23" file="/data/adaguc-datasets/resources/symbols/WW/W22motregen.png"/>
+      <SymbolInterval min="23" max="24" file="/data/adaguc-datasets/resources/symbols/WW/W23Regen.png"/>
+      <SymbolInterval min="24" max="25" file="/data/adaguc-datasets/resources/symbols/WW/W24sneeuw.png"/>
+      <SymbolInterval min="25" max="26" file="/data/adaguc-datasets/resources/symbols/WW/W25onderkoeld.png"/>
+      <SymbolInterval min="26" max="27" file="/data/adaguc-datasets/resources/symbols/WW/W26onweer.png"/>
+      <SymbolInterval min="27" max="28" file="/data/adaguc-datasets/resources/symbols/WW/W27driftsneeuw.png"/>
+      <SymbolInterval min="28" max="29" file="/data/adaguc-datasets/resources/symbols/WW/W28driftsneeuw.png"/>
+      <SymbolInterval min="29" max="30" file="/data/adaguc-datasets/resources/symbols/WW/W29driftsneeuw.png"/>
+      <SymbolInterval min="30" max="31" file="/data/adaguc-datasets/resources/symbols/WW/W30mist.png"/>
+      <SymbolInterval min="31" max="32" file="/data/adaguc-datasets/resources/symbols/WW/W31mist.png"/>
+      <SymbolInterval min="32" max="33" file="/data/adaguc-datasets/resources/symbols/WW/W32mist.png"/>
+      <SymbolInterval min="33" max="34" file="/data/adaguc-datasets/resources/symbols/WW/W33mist.png"/>
+      <SymbolInterval min="34" max="35" file="/data/adaguc-datasets/resources/symbols/WW/W34mist.png"/>
+      <SymbolInterval min="35" max="36" file="/data/adaguc-datasets/resources/symbols/WW/W35mist.png"/>
+      <SymbolInterval min="40" max="41" file="/data/adaguc-datasets/resources/symbols/WW/W40neerslag.png"/>
+      <SymbolInterval min="41" max="42" file="/data/adaguc-datasets/resources/symbols/WW/W41neerslag.png"/>
+      <SymbolInterval min="42" max="43" file="/data/adaguc-datasets/resources/symbols/WW/W42neerslag.png"/>
+      <SymbolInterval min="43" max="44" file="/data/adaguc-datasets/resources/symbols/WW/W43neerslag.png"/>
+      <SymbolInterval min="44" max="45" file="/data/adaguc-datasets/resources/symbols/WW/W44neerslag.png"/>
+      <SymbolInterval min="45" max="46" file="/data/adaguc-datasets/resources/symbols/WW/W45neerslag.png"/>
+      <SymbolInterval min="46" max="47" file="/data/adaguc-datasets/resources/symbols/WW/W46neerslag.png"/>
+      <SymbolInterval min="47" max="48" file="/data/adaguc-datasets/resources/symbols/WW/W47onderkoeld.png"/>
+      <SymbolInterval min="48" max="49" file="/data/adaguc-datasets/resources/symbols/WW/W48onderkoeld.png"/>
+      <SymbolInterval min="50" max="51" file="/data/adaguc-datasets/resources/symbols/WW/W50motregen.png"/>
+      <SymbolInterval min="51" max="52" file="/data/adaguc-datasets/resources/symbols/WW/W51motregen.png"/>
+      <SymbolInterval min="52" max="53" file="/data/adaguc-datasets/resources/symbols/WW/W52motregen.png"/>
+      <SymbolInterval min="53" max="54" file="/data/adaguc-datasets/resources/symbols/WW/W53motregen.png"/>
+      <SymbolInterval min="54" max="55" file="/data/adaguc-datasets/resources/symbols/WW/W54motregen.png"/>
+      <SymbolInterval min="55" max="56" file="/data/adaguc-datasets/resources/symbols/WW/W55motregen.png"/>
+      <SymbolInterval min="56" max="57" file="/data/adaguc-datasets/resources/symbols/WW/W56motregen.png"/>
+      <SymbolInterval min="57" max="58" file="/data/adaguc-datasets/resources/symbols/WW/W57MotregenRegen.png"/>
+      <SymbolInterval min="58" max="59" file="/data/adaguc-datasets/resources/symbols/WW/W58MotregenRegen.png"/>
+      <SymbolInterval min="60" max="61" file="/data/adaguc-datasets/resources/symbols/WW/W60regen.png"/>
+      <SymbolInterval min="61" max="62" file="/data/adaguc-datasets/resources/symbols/WW/W61regen.png"/>
+      <SymbolInterval min="62" max="63" file="/data/adaguc-datasets/resources/symbols/WW/W62regen.png"/>
+      <SymbolInterval min="63" max="64" file="/data/adaguc-datasets/resources/symbols/WW/W63regen.png"/>
+      <SymbolInterval min="64" max="65" file="/data/adaguc-datasets/resources/symbols/WW/W64regen.png"/>
+      <SymbolInterval min="65" max="66" file="/data/adaguc-datasets/resources/symbols/WW/W65regen.png"/>
+      <SymbolInterval min="66" max="67" file="/data/adaguc-datasets/resources/symbols/WW/W66regen.png"/>
+      <SymbolInterval min="67" max="68" file="/data/adaguc-datasets/resources/symbols/WW/W67regen.png"/>
+      <SymbolInterval min="68" max="69" file="/data/adaguc-datasets/resources/symbols/WW/W68regen.png"/>
+      <SymbolInterval min="70" max="71" file="/data/adaguc-datasets/resources/symbols/WW/W70sneeuw.png"/>
+      <SymbolInterval min="71" max="72" file="/data/adaguc-datasets/resources/symbols/WW/W71sneeuw.png"/>
+      <SymbolInterval min="72" max="73" file="/data/adaguc-datasets/resources/symbols/WW/W72sneeuw.png"/>
+      <SymbolInterval min="73" max="74" file="/data/adaguc-datasets/resources/symbols/WW/W73sneeuw.png"/>
+      <SymbolInterval min="74" max="75" file="/data/adaguc-datasets/resources/symbols/WW/W74sneeuw.png"/>
+      <SymbolInterval min="75" max="76" file="/data/adaguc-datasets/resources/symbols/WW/W75sneeuw.png"/>
+      <SymbolInterval min="76" max="77" file="/data/adaguc-datasets/resources/symbols/WW/W76ijsregen.png"/>
+      <SymbolInterval min="77" max="78" file="/data/adaguc-datasets/resources/symbols/WW/W77motsneeuw.png"/>
+      <SymbolInterval min="78" max="79" file="/data/adaguc-datasets/resources/symbols/WW/W78IC.png"/>
+      <SymbolInterval min="78" max="79" file="/data/adaguc-datasets/resources/symbols/WW/W78ijskristallen.png"/>
+      <SymbolInterval min="80" max="81" file="/data/adaguc-datasets/resources/symbols/WW/W80buien.png"/>
+      <SymbolInterval min="81" max="82" file="/data/adaguc-datasets/resources/symbols/WW/W81buien.png"/>
+      <SymbolInterval min="82" max="83" file="/data/adaguc-datasets/resources/symbols/WW/W82buien.png"/>
+      <SymbolInterval min="83" max="84" file="/data/adaguc-datasets/resources/symbols/WW/W83buien.png"/>
+      <SymbolInterval min="84" max="85" file="/data/adaguc-datasets/resources/symbols/WW/W84buien.png"/>
+      <SymbolInterval min="85" max="86" file="/data/adaguc-datasets/resources/symbols/WW/W85buien.png"/>
+      <SymbolInterval min="86" max="87" file="/data/adaguc-datasets/resources/symbols/WW/W86sneeuwbui.png"/>
+      <SymbolInterval min="87" max="88" file="/data/adaguc-datasets/resources/symbols/WW/W87sneeuwbui.png"/>
+      <SymbolInterval min="89" max="90" file="/data/adaguc-datasets/resources/symbols/WW/W89hagel.png"/>
+      <SymbolInterval min="90" max="91" file="/data/adaguc-datasets/resources/symbols/WW/W90onweer.png"/>
+      <SymbolInterval min="91" max="92" file="/data/adaguc-datasets/resources/symbols/WW/W91onweer.png"/>
+      <SymbolInterval min="92" max="93" file="/data/adaguc-datasets/resources/symbols/WW/W92onweer.png"/>
+      <SymbolInterval min="93" max="94" file="/data/adaguc-datasets/resources/symbols/WW/W93onweer.png"/>
+      <SymbolInterval min="94" max="95" file="/data/adaguc-datasets/resources/symbols/WW/W94onweer.png"/>
+      <SymbolInterval min="95" max="96" file="/data/adaguc-datasets/resources/symbols/WW/W95onweer.png"/>
+      <SymbolInterval min="96" max="97" file="/data/adaguc-datasets/resources/symbols/WW/W96onweer.png"/>
+      <SymbolInterval min="99" max="100" file="/data/adaguc-datasets/resources/symbols/WW/W99tornado.png"/>
+      <LegendGraphic value="/data/adaguc-datasets/resources/symbols/WW/legend.png"/>
     </Style>
 
   </Configuration>

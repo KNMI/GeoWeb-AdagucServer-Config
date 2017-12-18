@@ -115,7 +115,7 @@
     <Variable>ww</Variable>
     <FilePath filter="^kmds_alle_stations_10001_.*\.nc$">/data/adaguc-data/OBS</FilePath>
     <Dimension name="time" interval="PT10M">time</Dimension>
-    <Styles>wwcode</Styles>
+    <Styles>wwcode_transparent,wwcode</Styles>
 
   </Layer>
   
