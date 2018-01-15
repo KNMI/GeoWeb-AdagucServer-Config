@@ -127,34 +127,78 @@
     <Variable>ff</Variable>
     <Variable>dd</Variable>
     <FilePath filter="^kmds_alle_stations_10001_.*\.nc$">/data/adaguc-data/OBS</FilePath>
-    <DataPostProc algorithm="beaufort"/>
+    <DataPostProc algorithm="toknots" units="kts"/>  
     <Dimension name="time" interval="PT10M">time</Dimension>
-    <Styles>bftdiscvec,bftalldiscvec,barb,barball</Styles>
+    <Styles>barball</Styles>
   </Layer>
-  
+
   <Layer type="database" hidden="false">
-    <Group value="10M/derived"/>
-    <Name>weather</Name>
-    <Title>Weather</Title>
-    <!--   <Variable>ww</Variable> -->
-    <Variable>rh</Variable>
-    <Variable>ta</Variable>
+    <Group value="10M"/>
+    <Title>Gust</Title>
+    <Name>gust</Name>
+    <Variable>gff</Variable>
+    <FilePath filter="^kmds_alle_stations_10001_.*\.nc$">/data/adaguc-data/OBS</FilePath>
+    <DataPostProc algorithm="toknots" units="kts"/>  
+    <Dimension name="time" interval="PT10M">time</Dimension>
+    <Styles>singlevalue</Styles>
+  </Layer>
+
+  <Layer type="database" hidden="false">
+    <Group value="10M"/>
+    <Title>MOR</Title>
+    <Name>MOR</Name>
     <Variable>zm</Variable>
     <FilePath filter="^kmds_alle_stations_10001_.*\.nc$">/data/adaguc-data/OBS</FilePath>
     <Dimension name="time" interval="PT10M">time</Dimension>
-    <Styles>weather,weatherall</Styles>
+    <Styles>singlevalue</Styles>
   </Layer>
   
   <Layer type="database" hidden="false">
-    <Group value="10M/derived"/>
+    <Group value="10M"/>
+    <Title>cloudlyr1</Title> 
+    <Name>cloudlyr1</Name> 
+    <Variable>nc1</Variable>
+    <Variable>hc1</Variable>
+    <Variable>nc1</Variable>
+    <FilePath filter="^kmds_alle_stations_10001_.*\.nc$">/data/adaguc-data/OBS</FilePath>
+    <Dimension name="time" interval="PT10M">time</Dimension>
+    <Styles>cloudlayer</Styles>
+  </Layer>
+
+  <Layer type="database" hidden="false">
+    <Group value="10M"/>
+    <Title>cloudlyr2</Title> 
+    <Name>cloudlyr2</Name> 
+    <Variable>nc2</Variable>
+    <Variable>hc2</Variable>
+    <Variable>nc2</Variable>
+    <FilePath filter="^kmds_alle_stations_10001_.*\.nc$">/data/adaguc-data/OBS</FilePath>
+    <Dimension name="time" interval="PT10M">time</Dimension>
+    <Styles>cloudlayer</Styles>
+  </Layer>
+
+  <Layer type="database" hidden="false">
+    <Group value="10M"/>
+    <Title>cloudlyr3</Title> 
+    <Name>cloudlyr3</Name> 
+    <Variable>nc3</Variable>
+    <Variable>hc3</Variable>
+    <Variable>nc3</Variable>
+    <FilePath filter="^kmds_alle_stations_10001_.*\.nc$">/data/adaguc-data/OBS</FilePath>
+    <Dimension name="time" interval="PT10M">time</Dimension>
+    <Styles>cloudlayer</Styles>
+  </Layer>
+
+  <Layer type="database" hidden="false">
+    <Group value="10M"/>
     <Title>T2m_Td2m</Title>
     <Name>T2m_Td2m</Name>
     <Variable>ta</Variable>
-    <Variable>pp</Variable>
-    <Variable>ff</Variable>
+    <Variable>td</Variable>
+    <Variable>ta</Variable>
     <FilePath filter="^kmds_alle_stations_10001_.*\.nc$">/data/adaguc-data/OBS</FilePath>
     <Dimension name="time" interval="PT10M">time</Dimension>
-    <Styles>threevar</Styles>
+    <Styles>t2mtd2m</Styles>
   </Layer>
   
   

@@ -7,7 +7,7 @@
     <Min>960</Min>
     <Max>1040</Max>
     <NameMapping name="point"        title="pressure" abstract="pressure"/>
-    <Point plotstationid="false" pointstyle="point" discradius="15" textradius="0" dot="false" fontsize="8" textcolor="#000000" textformat="%0.0f"/>
+    <Point plotstationid="false" pointstyle="point" discradius="15" textradius="0" dot="false" fontsize="8" textcolor="#000000" textformat="%0.1f"/>
   </Style>
   
   <Style name="observation.temperature">
@@ -25,7 +25,7 @@
     <Min>0</Min>
     <Max>10000</Max>
     <NameMapping name="point"        title="Height in feet" abstract="With discrete colors"/>
-    <Point plotstationid="false" pointstyle="point" discradius="10" textradius="17"  dot="true" fontsize="8"  textcolor="#000000"/>
+    <Point plotstationid="false" pointstyle="point" discradius="10" textradius="17"  dot="true" fontsize="8"  textcolor="#000000" textformat="%0.0f"/>
   </Style>
   
   <Style name="observation.radiation">
@@ -34,7 +34,7 @@
     <Min>0</Min>
     <Max>1333.333</Max> <!-- (240 / ( (240 / (216/(1200 - 0)))  -->
     <NameMapping name="point"        title="Height in feet" abstract="With discrete colors"/>
-    <Point plotstationid="false" pointstyle="point" discradius="10" textradius="17"  dot="true" fontsize="8"  textcolor="#000000"/>
+    <Point plotstationid="false" pointstyle="point" discradius="10" textradius="17"  dot="true" fontsize="8"  textcolor="#000000" textformat="%0.1f"/>
   </Style>
   
   <Style name="observation.precipitation">
@@ -94,8 +94,9 @@
     <Max>10000</Max>
     <Thinning radius="40"/>
     <RenderMethod>barb,barbthin</RenderMethod>
-    <Point pointstyle="point" fillcolor="#00000060" textcolor="#0000FFFF" linecolor="#000000A0" discradius="16" dot="true" anglestart="0" anglestep="120" fontfile="{ADAGUC_PATH}/data/fonts/FreeSans.ttf" fontsize="14" textformat="%0.1f"/>
-    <Vector vectorstyle="barb" linewidth="2" linecolor="#0000FFFF" plotstationid="true" />
+    <Point2 pointstyle="point" fillcolor="#00000060" textcolor="#0000FFFF" linecolor="#000000A0" discradius="16" dot="true" anglestart="0" anglestep="120" fontfile="{ADAGUC_PATH}/data/fonts/FreeSans.ttf" fontsize="14" textformat="%0.1f"/>
+    <Point pointstyle="point" fillcolor="#00000000" textcolor="#0000FFFF" linecolor="#00000000" discradius="0" dot="true" anglestart="0" anglestep="120" fontfile="{ADAGUC_PATH}/data/fonts/FreeSans.ttf" fontsize="14" textradius="10" textformat="%0.1f"/>
+    <Vector vectorstyle="barb" linewidth="2" linecolor="#0000FFFF" plotstationid="false" plotvalue="true" textformat="%0.0f"/>
   </Style>
   
   <Style name="barbdisc">
@@ -209,19 +210,19 @@
     <Point pointstyle="point" fillcolor="#800000FF" textcolor="#000000FF" linecolor="#000000FF" discradius="8" textradius="14" dot="true" anglestart="0" anglestep="120" fontfile="{ADAGUC_PATH}/data/fonts/FreeSans.ttf" fontsize="8" textformat="%0.1f" plotstationid="false"/>
   </Style>
   
-  <Style name="threevar">
+  <Style name="t2mtd2m">
     <Legend fixed="true">bluewhitered</Legend>
     <Min>-10</Min>
     <Max>30</Max>
     <Thinning radius="60"/>
     <RenderMethod>point,pointthin</RenderMethod>
-    <Point pointstyle="point" fillcolor="#800000FF" textcolor="#000000FF" linecolor="#000000FF" discradius="8" textradius="14" dot="false" anglestart="90" anglestep="90" fontfile="{ADAGUC_PATH}/data/fonts/FreeSans.ttf" fontsize="8" textformat="%0.1f" plotstationid="false"/>
+    <Point pointstyle="point" fillcolor="#80000000" textcolor="#000000FF" linecolor="#000000FF" discradius="8" textradius="6" dot="true" anglestart="0" anglestep="180" fontfile="{ADAGUC_PATH}/data/fonts/FreeSans.ttf" fontsize="8" textformat="%0.1f" plotstationid="false"/>
   </Style>
   
   <Style name="temperaturepoint">
     <Legend fixed="true">bluewhitered</Legend>
     <Min>-10</Min>
-    <Max>30</Max>
+    <Max>3000000</Max>
     <Thinning radius="40"/>
     <RenderMethod>point,pointthin</RenderMethod>
     <!--<Point pointstyle="point" fillcolor="#800000FF" textcolor="#000000FF" linecolor="#000000FF" discradius="8" textradius="14" dot="true" anglestart="0" anglestep="120" fontfile="{ADAGUC_PATH}/data/fonts/FreeSans.ttf" fontsize="8" textformat="%0.1f" plotstationid="false"/>-->
@@ -229,6 +230,13 @@
     <FilterPoints skip="" use="06235,06280,06260,06290,06310,06380"/>
   </Style>
   
+  <Style name="cloudlayer">
+    <Legend fixed="true">bluewhitered</Legend>
+    <Thinning radius="40"/>
+    <RenderMethod>point,pointthin</RenderMethod>
+    <Point pointstyle="point" fillcolor="#80000000" textcolor="#000000FF" linecolor="#000000FF" discradius="8" textradius="6" dot="true" anglestart="0" anglestep="180" fontfile="{ADAGUC_PATH}/data/fonts/FreeSans.ttf" fontsize="8" textformat="%0.0f" plotstationid="false"/>
+  </Style>
+
   <Style name="temperaturelabel">
     <Legend fixed="true">bluewhitered</Legend>
     <Min>-10</Min>
@@ -266,6 +274,25 @@
     <RenderMethod>point,pointthin</RenderMethod>
     <Point fillcolor="#000000a0" textcolor="#FFFFFFFF" linecolor="#000000a0" pointstyle="volume" discradius="20" dot="true" anglestart="0" anglestep="120" fontfile="{ADAGUC_PATH}/data/fonts/FreeSans.ttf" fontsize="8" textformat="%0.1f"/>
   </Style>
+
+  <Style name="singlevalue">
+    <Legend fixed="true">bluewhitered</Legend>
+    <Min>-10</Min>
+    <Max>30</Max>
+    <Thinning radius="40"/>
+    <RenderMethod>point,pointthin</RenderMethod>
+    <Point pointstyle="point" fillcolor="#80000000" textcolor="#000000FF" linecolor="#000000FF" discradius="0" dot="true" anglestart="0" anglestep="0" fontfile="{ADAGUC_PATH}/data/fonts/FreeSans.ttf" fontsize="8" textformat="%0.0f" plotstationid="false"/>
+  </Style>
+  
+  <Style name="singlevalue1">
+    <Legend fixed="true">bluewhitered</Legend>
+    <Min>-10</Min>
+    <Max>30</Max>
+    <Thinning radius="40"/>
+    <RenderMethod>point,pointthin</RenderMethod>
+    <Point pointstyle="point" fillcolor="#80000000" textcolor="#000000FF" linecolor="#000000FF" discradius="10" dot="true" anglestart="0" anglestep="90" fontfile="{ADAGUC_PATH}/data/fonts/FreeSans.ttf" fontsize="8" textformat="%0.0f" plotstationid="false"/>
+  </Style>
+  
   
   <Style name="disc">
     <Legend fixed="true">bluewhitered</Legend>
