@@ -13,7 +13,7 @@
     <Styles>blue,yellow,red,black</Styles>
   </Layer>
   <Layer type="database" hidden="false">
-    <Title>Dutch districts</Title>
+    <Title>Dutch coastal districts</Title>
     <Name>neddis</Name>
     <Variable>features</Variable>
     <DataSource>GEOJSON</DataSource>
@@ -45,7 +45,7 @@
     <Styles>blue,yellow,red,black</Styles>
   </Layer>
   <Layer type="database" hidden="false">
-    <Title>Provincies</Title>
+    <Title>Provinces</Title>
     <Name>provincies</Name>
     <Variable>features</Variable>
     <DataSource>GEOJSON</DataSource>
@@ -76,6 +76,133 @@
     <DataSource>GEOJSON</DataSource>
     <FilePath filter="nwb-light-P.geojson$">/data/adaguc-data/OVERLAYS</FilePath>
     <Styles>blue,yellow,red,black</Styles>
+  </Layer>
+  
+  <Layer type="database" hidden="false">
+    <Title>NAF areas</Title>
+    <Name>nafbdrys</Name>
+    <Variable>features</Variable>
+    <DataSource>GEOJSON</DataSource>
+    <FilePath filter="naf_bdrys.geojson$">/data/adaguc-data/OVERLAYS</FilePath>
+    <Styles>blue,yellow,red,black</Styles>
+  </Layer>
+  
+  <Layer type="database" hidden="false">
+    <Group value="Aviation"/>
+    <Title>MUAC</Title>
+    <Name>muac</Name>
+    <Variable>features</Variable>
+    <DataSource>GEOJSON</DataSource>
+    <FilePath filter="muac.geojson$">/data/adaguc-data/OVERLAYS</FilePath>
+    <Styles>red,blue,yellow,black</Styles>
+  </Layer>
+  
+  <Layer type="database" hidden="false">
+    <Group value="Aviation"/>
+    <Title>FIR EHAM</Title>
+    <Name>fir_bdrys2</Name>
+    <Variable>features</Variable>
+    <DataSource>GEOJSON</DataSource>
+    <FilePath filter="fir_bdrys2.geojson$">/data/adaguc-data/OVERLAYS</FilePath>
+    <Styles>blue,yellow,red,black</Styles>
+  </Layer>
+  
+  <Layer type="database" hidden="false">
+    <Group value="Aviation"/>
+    <Title>ATSroute</Title>
+    <Name>atsroute</Name>
+    <Variable>features</Variable>
+    <DataSource>GEOJSON</DataSource>
+    <FilePath filter="atsroute.geojson$">/data/adaguc-data/OVERLAYS</FilePath>
+    <Styles>blue,yellow,red,black</Styles>
+  </Layer>
+  
+  <Layer type="database" hidden="false">
+    <Group value="Aviation"/>
+    <Title>Airfields (5/10km)</Title>
+    <Name>airfield_rings_5_10</Name>
+    <Variable>features</Variable>
+    <DataSource>GEOJSON</DataSource>
+    <FilePath filter="airfield_rings_5_10.geojson$">/data/adaguc-data/OVERLAYS</FilePath>
+    <Styles>blue,yellow,red,black</Styles>
+  </Layer>
+  
+  <Layer type="database" hidden="false">
+    <Group value="Aviation"/>
+    <Title>Airfields (15km)</Title>
+    <Name>airfield_rings_15</Name>
+    <Variable>features</Variable>
+    <DataSource>GEOJSON</DataSource>
+    <FilePath filter="airfield_rings_15.geojson$">/data/adaguc-data/OVERLAYS</FilePath>
+    <Styles>blue,yellow,red,black</Styles>
+  </Layer>
+  
+  <Layer type="database" hidden="false">
+    <Group value="Aviation"/>
+    <Title>GLLFC Area</Title>
+    <Name>gllfcarea</Name>
+    <Variable>features</Variable>
+    <DataSource>GEOJSON</DataSource>
+    <FilePath filter="gllfcarea.geojson$">/data/adaguc-data/OVERLAYS</FilePath>
+    <Styles>blue,yellow,red,black</Styles>
+  </Layer>
+  
+  <Layer type="database" hidden="false">
+    <Title>Surge districts Area</Title>
+    <Name>surgedistricts</Name>
+    <Variable>features</Variable>
+    <DataSource>GEOJSON</DataSource>
+    <FilePath filter="surgedistricts.geojson$">/data/adaguc-data/OVERLAYS</FilePath>
+    <Styles>blue,yellow,red,black</Styles>
+  </Layer>
+  
+  <Layer type="database" hidden="false">
+    <Title>VAFC Area</Title>
+    <Name>vafc</Name>
+    <Variable>features</Variable>
+    <DataSource>GEOJSON</DataSource>
+    <FilePath filter="vafc.geojson$">/data/adaguc-data/OVERLAYS</FilePath>
+    <Styles>blue,yellow,red,black</Styles>
+  </Layer>
+  
+  <Layer type="database" hidden="false">
+    <Title>Airports</Title>
+    <Name>airports</Name>
+    <Variable>id</Variable>
+    <FilePath filter="airports.nc$">/data/adaguc-data/OVERLAYS</FilePath>
+    <Styles>airports</Styles>
+  </Layer>
+
+  <Layer type="database" hidden="false">
+    <Title>Holding Points</Title>
+    <Name>holdingpoints</Name>
+    <Variable>id</Variable>
+    <FilePath filter="holdingpoints.nc$">/data/adaguc-data/OVERLAYS</FilePath>
+    <Styles>holdingpoints</Styles>
+  </Layer>
+
+  <Layer type="database" hidden="false">
+    <Title>Stations All</Title>
+    <Name>allstations</Name>
+    <Variable>name</Variable>
+    <FilePath filter="allstations.nc$">/data/adaguc-data/OVERLAYS</FilePath>
+    <Styles>stations</Styles>
+  </Layer>
+
+  <Layer type="database" hidden="false">
+    <Title>Stations Land</Title>
+    <Name>landstations</Name>
+    <Variable>name</Variable>
+    <FilePath filter="landstations.nc$">/data/adaguc-data/OVERLAYS</FilePath>
+    <Styles>stations</Styles>
+  </Layer>
+
+  <Layer type="database" hidden="false">
+    <Title>Stations North Sea</Title>
+    <Name>northseastations</Name>
+    <Variable>name</Variable>
+    <FilePath filter="northseastations.nc$">/data/adaguc-data/OVERLAYS</FilePath>
+    <Styles>stations</Styles>
   </Layer>
   
   

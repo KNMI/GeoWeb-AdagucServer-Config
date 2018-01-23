@@ -398,28 +398,28 @@
   
   <Style name="blue">
     <Legend>isoluminant</Legend>
-    <FeatureInterval match=".*" bgcolor="#CCCCFF" fillcolor="#000080FF"  bordercolor="#0000FFFF" borderwidth="1"/>
+    <FeatureInterval match=".*" bgcolor="#CCCCFF" fillcolor="#000080FF"  bordercolor="#0000FFFF" borderwidth="0.5"/>
     <RenderMethod>polyline</RenderMethod>
     <NameMapping name="polyline" title="polyline" abstract="polyline"/>
   </Style>
   
   <Style name="red">
     <Legend>isoluminant</Legend>
-    <FeatureInterval match=".*" bgcolor="#CCCCFF" fillcolor="#000080FF"  bordercolor="#FF0000FF" borderwidth="1"/>
+    <FeatureInterval match=".*" bgcolor="#CCCCFF" fillcolor="#000080FF"  bordercolor="#FF0000FF" borderwidth="0.5"/>
     <RenderMethod>polyline</RenderMethod>
     <NameMapping name="polyline" title="polyline" abstract="polyline"/>
   </Style>
   
   <Style name="black">
     <Legend>isoluminant</Legend>
-    <FeatureInterval match=".*" bgcolor="#CCCCFF" fillcolor="#000080FF"  bordercolor="#000000FF" borderwidth="1"/>
+    <FeatureInterval match=".*" bgcolor="#CCCCFF" fillcolor="#000080FF"  bordercolor="#000000FF" borderwidth="0.5"/>
     <RenderMethod>polyline</RenderMethod>
     <NameMapping name="polyline" title="polyline" abstract="polyline"/>
   </Style>
   
   <Style name="yellow">
     <Legend>isoluminant</Legend>
-    <FeatureInterval match=".*" bgcolor="#CCCCFF" fillcolor="#000080FF"  bordercolor="#FFFF00FF" borderwidth="1"/>
+    <FeatureInterval match=".*" bgcolor="#CCCCFF" fillcolor="#000080FF"  bordercolor="#FFFF00FF" borderwidth="0.5"/>
     <RenderMethod>polyline</RenderMethod>
     <NameMapping name="polyline" title="polyline" abstract="polyline"/>
   </Style>
@@ -1254,5 +1254,28 @@
     <Vector vectorstyle="vector" linewidth="2" linecolor="#0000FFFF" scale="5" plotstationid="true"/>
   </Style>
   
-  
+  <Style name="stations">
+    <Legend fixed="true">bluewhitered</Legend>
+    <Thinning radius="40"/>
+    <RenderMethod>point</RenderMethod>
+    <Point pointstyle="point" fillcolor="#000000A0" textcolor="#0000FFFF" linecolor="#000000A0" discradius="0" dot="true" anglestart="0" anglestep="120" fontsize="10" textformat="%s"/>
+  </Style>
+
+  <Style name="airports">
+    <Legend fixed="true">bluewhitered</Legend>
+    <Thinning radius="40"/>
+    <RenderMethod>point</RenderMethod>
+    <Point pointstyle="symbol" fillcolor="#000000A0" textcolor="#0000FFFF" linecolor="#000000A0" discradius="0" dot="true" anglestart="0" anglestep="120" fontsize="10" textradius="12" textformat="%s" plotstationid="true"/>
+   <SymbolInterval file="/data/adaguc-datasets/resources/icons/airport.png" offset_y="-9"/>
+  </Style>
+
+  <Style name="holdingpoints">
+    <Legend fixed="true">bluewhitered</Legend>
+    <Thinning radius="40"/>
+    <RenderMethod>point</RenderMethod>
+    <Point pointstyle="symbol" fillcolor="#000000A0" textcolor="#0000FFFF" linecolor="#000000A0" discradius="0" dot="true" anglestart="0" anglestep="120" fontsize="10" textradius="9" textformat="%0.1f" plotstationid="true" />
+   <SymbolInterval file="/data/adaguc-datasets/resources/icons/holdingpoint.png" offset_y="0"/>
+
+  </Style>
+
 </Configuration> 
