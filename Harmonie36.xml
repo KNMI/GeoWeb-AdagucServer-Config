@@ -301,5 +301,25 @@
     <Dimension name="modellevel" units="-">modellevel</Dimension>
     <Dimension name="forecast_reference_time" units="ISO8601">reference_time</Dimension>
   </Layer>
+
+  <Layer type="database" hidden="true">
+    <Name>x_wind__at_ml</Name>
+    <Title>Wind flags (ML)</Title>
+    <Variable>x_wind__at_ml</Variable>
+    <FilePath filter="HARM_N25.*_ML\.nc">/data/adaguc-data/HARM_N25_ML</FilePath>
+    <Dimension name="time" units="ISO8601" default="min">time</Dimension>
+    <Dimension name="modellevel" units="-">modellevel</Dimension>
+    <Dimension name="forecast_reference_time" units="ISO8601">reference_time</Dimension>
+  </Layer>
+
+  <Layer type="database" hidden="true">
+    <Name>y_wind__at_ml</Name>
+    <Title>Wind flags (ML)</Title>
+    <Variable>y_wind__at_ml</Variable>
+    <FilePath filter="HARM_N25.*_ML\.nc">/data/adaguc-data/HARM_N25_ML</FilePath>
+    <Dimension name="time" units="ISO8601" default="min">time</Dimension>
+    <Dimension name="modellevel" units="-">modellevel</Dimension>
+    <Dimension name="forecast_reference_time" units="ISO8601">reference_time</Dimension>
+  </Layer>
   
 </Configuration>
