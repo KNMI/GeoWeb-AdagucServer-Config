@@ -30,7 +30,7 @@
     <Name>LGT_NL25_LAM_05M</Name>
     <Title>Lightning NL</Title>
     <DataBaseTable>LGT_NL25_LAM_05M</DataBaseTable>
-    <FilePath filter="LGT_NL25_LAM_05M.*\.nc$">/data/adaguc-data/LGT</FilePath>
+    <FilePath filter="^LGT_NL25_LAM_05M.*\.nc$">/data/adaguc-data/LGT</FilePath>
     <Dimension name="time" interval="PT5M">time</Dimension>
     <Variable>event_type</Variable>
     <Styles>LGTKNMI,LGTKNMI_16</Styles>
@@ -40,7 +40,7 @@
     <Name>LGT_NL23_LAM_05M</Name>
     <Title>Lightning EUR</Title>
     <DataBaseTable>LGT_NL23_LAM_05M</DataBaseTable>
-    <FilePath filter="LGT_NL23_LAM_05M.*\.nc$">/data/adaguc-data/LGT</FilePath>
+    <FilePath filter="^LGT_NL23_LAM_05M.*\.nc$">/data/adaguc-data/LGT</FilePath>
     <Dimension name="time" interval="PT5M">time</Dimension>
     <Variable>event_type</Variable>
     <Styles>LGTKNMI,LGTKNMI_16</Styles>
