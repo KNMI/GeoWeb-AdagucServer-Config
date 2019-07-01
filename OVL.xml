@@ -9,7 +9,7 @@
     <Name>FIR_DEC_2013_EU</Name>
     <Variable>features</Variable>
     <DataSource>GEOJSON</DataSource>
-    <FilePath filter="FIR_DEC_2013_EU.geojson$">/data/adaguc-data/OVERLAYS</FilePath>
+    <FilePath filter="FIR_DEC_2013_EU.geojson$">/data/adaguc-datasets/resources/OVERLAYS</FilePath>
     <Styles>blue,yellow,red,black</Styles>
   </Layer>
   <Layer type="database" hidden="false">
@@ -17,7 +17,7 @@
     <Name>neddis</Name>
     <Variable>features</Variable>
     <DataSource>GEOJSON</DataSource>
-    <FilePath filter="neddis.geojson$">/data/adaguc-data/OVERLAYS</FilePath>
+    <FilePath filter="neddis.geojson$">/data/adaguc-datasets/resources/OVERLAYS</FilePath>
     <Styles>blue,yellow,red,black</Styles>
   </Layer>
   <Layer type="database" hidden="false">
@@ -25,7 +25,7 @@
     <Name>northseadistricts</Name>
     <Variable>features</Variable>
     <DataSource>GEOJSON</DataSource>
-    <FilePath filter="northseadistricts.geojson$">/data/adaguc-data/OVERLAYS</FilePath>
+    <FilePath filter="northseadistricts.geojson$">/data/adaguc-datasets/resources/OVERLAYS</FilePath>
     <Styles>blue,yellow,red,black</Styles>
   </Layer>
   <Layer type="database" hidden="false">
@@ -33,7 +33,7 @@
     <Name>gemeenten</Name>
     <Variable>features</Variable>
     <DataSource>GEOJSON</DataSource>
-    <FilePath filter="gemeenten.geojson$">/data/adaguc-data/OVERLAYS</FilePath>
+    <FilePath filter="gemeenten.geojson$">/data/adaguc-datasets/resources/OVERLAYS</FilePath>
     <Styles>blue,yellow,red,black</Styles>
   </Layer>
   <Layer type="database" hidden="false">
@@ -41,7 +41,7 @@
     <Name>waterschappen</Name>
     <Variable>features</Variable>
     <DataSource>GEOJSON</DataSource>
-    <FilePath filter="waterschappen.geojson$">/data/adaguc-data/OVERLAYS</FilePath>
+    <FilePath filter="waterschappen.geojson$">/data/adaguc-datasets/resources/OVERLAYS</FilePath>
     <Styles>blue,yellow,red,black</Styles>
   </Layer>
   <Layer type="database" hidden="false">
@@ -49,7 +49,7 @@
     <Name>provincies</Name>
     <Variable>features</Variable>
     <DataSource>GEOJSON</DataSource>
-    <FilePath filter="provincies.geojson$">/data/adaguc-data/OVERLAYS</FilePath>
+    <FilePath filter="provincies.geojson$">/data/adaguc-datasets/resources/OVERLAYS</FilePath>
     <Styles>blue,yellow,red,black</Styles>
   </Layer>
   <Layer type="database" hidden="false">
@@ -57,15 +57,15 @@
     <Name>countries</Name>
     <Variable>features</Variable>
     <DataSource>GEOJSON</DataSource>
-    <FilePath filter="countries.geojson$">/data/adaguc-data/OVERLAYS</FilePath>
-    <Styles>black</Styles>
+    <FilePath filter="countries.geojson$">/data/adaguc-datasets/resources/OVERLAYS</FilePath>
+    <Styles>grey,black</Styles>
   </Layer>
   <Layer type="database" hidden="false">
     <Title>Rijkswegen</Title>
     <Name>nwblightR</Name>
     <Variable>features</Variable>
     <DataSource>GEOJSON</DataSource>
-    <FilePath filter="nwb-light-R.geojson$">/data/adaguc-data/OVERLAYS</FilePath>
+    <FilePath filter="nwb-light-R.geojson$">/data/adaguc-datasets/resources/OVERLAYS</FilePath>
     <Styles>blue,yellow,red,black</Styles>
   </Layer>
   
@@ -74,7 +74,7 @@
     <Name>nwblightP</Name>
     <Variable>features</Variable>
     <DataSource>GEOJSON</DataSource>
-    <FilePath filter="nwb-light-P.geojson$">/data/adaguc-data/OVERLAYS</FilePath>
+    <FilePath filter="nwb-light-P.geojson$">/data/adaguc-datasets/resources/OVERLAYS</FilePath>
     <Styles>blue,yellow,red,black</Styles>
   </Layer>
   
@@ -83,7 +83,7 @@
     <Name>nafbdrys</Name>
     <Variable>features</Variable>
     <DataSource>GEOJSON</DataSource>
-    <FilePath filter="naf_bdrys.geojson$">/data/adaguc-data/OVERLAYS</FilePath>
+    <FilePath filter="naf_bdrys.geojson$">/data/adaguc-datasets/resources/OVERLAYS</FilePath>
     <Styles>blue,yellow,red,black</Styles>
   </Layer>
   
@@ -93,7 +93,7 @@
     <Name>muac</Name>
     <Variable>features</Variable>
     <DataSource>GEOJSON</DataSource>
-    <FilePath filter="muac.geojson$">/data/adaguc-data/OVERLAYS</FilePath>
+    <FilePath filter="muac.geojson$">/data/adaguc-datasets/resources/OVERLAYS</FilePath>
     <Styles>red,blue,yellow,black</Styles>
   </Layer>
   
@@ -103,7 +103,7 @@
     <Name>fir_bdrys2</Name>
     <Variable>features</Variable>
     <DataSource>GEOJSON</DataSource>
-    <FilePath filter="fir_bdrys2.geojson$">/data/adaguc-data/OVERLAYS</FilePath>
+    <FilePath filter="fir_bdrys2.geojson$">/data/adaguc-datasets/resources/OVERLAYS</FilePath>
     <Styles>blue,yellow,red,black</Styles>
   </Layer>
   
@@ -113,7 +113,7 @@
     <Name>atsroute</Name>
     <Variable>features</Variable>
     <DataSource>GEOJSON</DataSource>
-    <FilePath filter="atsroute.geojson$">/data/adaguc-data/OVERLAYS</FilePath>
+    <FilePath filter="atsroute.geojson$">/data/adaguc-datasets/resources/OVERLAYS</FilePath>
     <Styles>blue,yellow,red,black</Styles>
   </Layer>
   
@@ -123,7 +123,7 @@
     <Name>airfield_rings_5_10</Name>
     <Variable>features</Variable>
     <DataSource>GEOJSON</DataSource>
-    <FilePath filter="airfield_rings_5_10.geojson$">/data/adaguc-data/OVERLAYS</FilePath>
+    <FilePath filter="airfield_rings_5_10.geojson$">/data/adaguc-datasets/resources/OVERLAYS</FilePath>
     <Styles>blue,yellow,red,black</Styles>
   </Layer>
   
@@ -133,7 +133,7 @@
     <Name>airfield_rings_15</Name>
     <Variable>features</Variable>
     <DataSource>GEOJSON</DataSource>
-    <FilePath filter="airfield_rings_15.geojson$">/data/adaguc-data/OVERLAYS</FilePath>
+    <FilePath filter="airfield_rings_15.geojson$">/data/adaguc-datasets/resources/OVERLAYS</FilePath>
     <Styles>blue,yellow,red,black</Styles>
   </Layer>
   
@@ -143,7 +143,7 @@
     <Name>gllfcarea</Name>
     <Variable>features</Variable>
     <DataSource>GEOJSON</DataSource>
-    <FilePath filter="gllfcarea.geojson$">/data/adaguc-data/OVERLAYS</FilePath>
+    <FilePath filter="gllfcarea.geojson$">/data/adaguc-datasets/resources/OVERLAYS</FilePath>
     <Styles>blue,yellow,red,black</Styles>
   </Layer>
   
@@ -152,7 +152,7 @@
     <Name>surgedistricts</Name>
     <Variable>features</Variable>
     <DataSource>GEOJSON</DataSource>
-    <FilePath filter="surgedistricts.geojson$">/data/adaguc-data/OVERLAYS</FilePath>
+    <FilePath filter="surgedistricts.geojson$">/data/adaguc-datasets/resources/OVERLAYS</FilePath>
     <Styles>blue,yellow,red,black</Styles>
   </Layer>
   
@@ -161,7 +161,7 @@
     <Name>vafc</Name>
     <Variable>features</Variable>
     <DataSource>GEOJSON</DataSource>
-    <FilePath filter="vafc.geojson$">/data/adaguc-data/OVERLAYS</FilePath>
+    <FilePath filter="vafc.geojson$">/data/adaguc-datasets/resources/OVERLAYS</FilePath>
     <Styles>blue,yellow,red,black</Styles>
   </Layer>
   
@@ -169,7 +169,7 @@
     <Title>Airports</Title>
     <Name>airports</Name>
     <Variable>id</Variable>
-    <FilePath filter="airports.nc$">/data/adaguc-data/OVERLAYS</FilePath>
+    <FilePath filter="airports.nc$">/data/adaguc-datasets/resources/OVERLAYS</FilePath>
     <Styles>airports</Styles>
   </Layer>
 
@@ -177,7 +177,7 @@
     <Title>Holding Points</Title>
     <Name>holdingpoints</Name>
     <Variable>id</Variable>
-    <FilePath filter="holdingpoints.nc$">/data/adaguc-data/OVERLAYS</FilePath>
+    <FilePath filter="holdingpoints.nc$">/data/adaguc-datasets/resources/OVERLAYS</FilePath>
     <Styles>holdingpoints</Styles>
   </Layer>
 
@@ -185,7 +185,7 @@
     <Title>Stations All</Title>
     <Name>allstations</Name>
     <Variable>name</Variable>
-    <FilePath filter="allstations.nc$">/data/adaguc-data/OVERLAYS</FilePath>
+    <FilePath filter="allstations.nc$">/data/adaguc-datasets/resources/OVERLAYS</FilePath>
     <Styles>stations</Styles>
   </Layer>
 
@@ -193,7 +193,7 @@
     <Title>Stations Land</Title>
     <Name>landstations</Name>
     <Variable>name</Variable>
-    <FilePath filter="landstations.nc$">/data/adaguc-data/OVERLAYS</FilePath>
+    <FilePath filter="landstations.nc$">/data/adaguc-datasets/resources/OVERLAYS</FilePath>
     <Styles>stations</Styles>
   </Layer>
 
@@ -201,7 +201,7 @@
     <Title>Stations North Sea</Title>
     <Name>northseastations</Name>
     <Variable>name</Variable>
-    <FilePath filter="northseastations.nc$">/data/adaguc-data/OVERLAYS</FilePath>
+    <FilePath filter="northseastations.nc$">/data/adaguc-datasets/resources/OVERLAYS</FilePath>
     <Styles>stations</Styles>
   </Layer>
   

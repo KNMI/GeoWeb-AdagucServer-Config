@@ -416,6 +416,14 @@
     <RenderMethod>polyline</RenderMethod>
     <NameMapping name="polyline" title="polyline" abstract="polyline"/>
   </Style>
+
+  <Style name="grey">
+    <Legend>isoluminant</Legend>
+    <FeatureInterval match=".*" bgcolor="#CCCCFF" fillcolor="#000080FF"  bordercolor="#737373FF" borderwidth="0.25"/>
+    <RenderMethod>polyline</RenderMethod>
+    <NameMapping name="polyline" title="polyline" abstract="polyline"/>
+  </Style>
+
   
   <Style name="yellow">
     <Legend>isoluminant</Legend>

@@ -19,11 +19,12 @@
     <Title>HRVIS</Title>
     <Variable>image1.image_data</Variable>
     <FilePath
-      filter="^METEOSAT_(8|9|10).*EUROPEHVIS.*\.h5">/data/adaguc-data/SAT</FilePath>
+      filter="^METEOSAT_(8|9|10|11).*EUROPEHVIS.*\.h5">/data/adaguc-data/SAT</FilePath>
     <DataReader>HDF5</DataReader>
     <Dimension name="time" interval="PT15M">time</Dimension>
     <Legend>gray</Legend>
     <Min>0</Min>
+    <Style><RenderMethod>nearest,bilinear</RenderMethod></Style>
     <Max>16384</Max>
   </Layer>
   <Layer type="database">
@@ -31,7 +32,7 @@
     <Name>VIS006</Name>
     <Title>VIS006</Title>
     <Variable>image8.image_data</Variable>
-    <FilePath filter="^METEOSAT_(8|9|10).*EUROPE_.*\.h5">/data/adaguc-data/SAT</FilePath>
+    <FilePath filter="^METEOSAT_(8|9|10|11).*EUROPE_.*\.h5">/data/adaguc-data/SAT</FilePath>
     <DataReader>HDF5</DataReader>
     <Dimension name="time" interval="PT15M">time</Dimension>
     <Legend>gray</Legend>
@@ -44,7 +45,7 @@
     <Name>VIS008</Name>
     <Title>VIS008</Title>
     <Variable>image9.image_data</Variable>
-    <FilePath filter="^METEOSAT_(8|9|10).*EUROPE_.*\.h5">/data/adaguc-data/SAT</FilePath>
+    <FilePath filter="^METEOSAT_(8|9|10|11).*EUROPE_.*\.h5">/data/adaguc-data/SAT</FilePath>
     <DataReader>HDF5</DataReader>
     <Dimension name="time" interval="PT15M">time</Dimension>
     <Legend>gray</Legend>
@@ -57,7 +58,7 @@
     <Name>IR039</Name>
     <Title>IR039</Title>
     <Variable>image2.image_data</Variable>
-    <FilePath filter="^METEOSAT_(8|9|10).*EUROPE_.*\.h5">/data/adaguc-data/SAT</FilePath>
+    <FilePath filter="^METEOSAT_(8|9|10|11).*EUROPE_.*\.h5">/data/adaguc-data/SAT</FilePath>
     <DataReader>HDF5</DataReader>
     <Dimension name="time" interval="PT15M">time</Dimension>
     <Legend>gray</Legend>
@@ -70,7 +71,7 @@
     <Name>IR108</Name>
     <Title>IR108</Title>
     <Variable>image5.image_data</Variable>
-    <FilePath filter="^METEOSAT_(8|9|10).*EUROPE_.*\.h5">/data/adaguc-data/SAT</FilePath>
+    <FilePath filter="^METEOSAT_(8|9|10|11).*EUROPE_.*\.h5">/data/adaguc-data/SAT</FilePath>
     <DataReader>HDF5</DataReader>
     <Dimension name="time" interval="PT15M">time</Dimension>
     <Legend>gray</Legend>
@@ -82,7 +83,7 @@
     <Name>IR120</Name>
     <Title>IR120</Title>
     <Variable>image6.image_data</Variable>
-    <FilePath filter="^METEOSAT_(8|9|10).*EUROPE_.*\.h5">/data/adaguc-data/SAT</FilePath>
+    <FilePath filter="^METEOSAT_(8|9|10|11).*EUROPE_.*\.h5">/data/adaguc-data/SAT</FilePath>
     <DataReader>HDF5</DataReader>
     <Dimension name="time" interval="PT15M">time</Dimension>
     <Legend>gray</Legend>
@@ -94,7 +95,7 @@
     <Name>WV062</Name>
     <Title>WV062</Title>
     <Variable>image10.image_data</Variable>
-    <FilePath filter="^METEOSAT_(8|9|10).*EUROPE_.*\.h5">/data/adaguc-data/SAT</FilePath>
+    <FilePath filter="^METEOSAT_(8|9|10|11).*EUROPE_.*\.h5">/data/adaguc-data/SAT</FilePath>
     <DataReader>HDF5</DataReader>
     <Dimension name="time" interval="PT15M">time</Dimension>
     <Legend>gray</Legend>
@@ -106,7 +107,7 @@
     <Name>WV073</Name>
     <Title>WV073</Title>
     <Variable>image11.image_data</Variable>
-    <FilePath filter="^METEOSAT_(8|9|10).*EUROPE_.*\.h5">/data/adaguc-data/SAT</FilePath>
+    <FilePath filter="^METEOSAT_(8|9|10|11).*EUROPE_.*\.h5">/data/adaguc-data/SAT</FilePath>
     <DataReader>HDF5</DataReader>
     <Dimension name="time" interval="PT15M">time</Dimension>
     <Legend>gray</Legend>
